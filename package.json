@@ -1,17 +1,17 @@
 {
-  "name": "context-maker",
-  "version": "1.0.4",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "roll": "git add . && git commit -m 'update'; npm version patch && npm publish && git push"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sahilrajput03/context-maker-npm.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "context-maker",
+	"version": "1.0.4",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"roll": "git add . && git commit -m 'update'; npm version patch && npm publish && git push"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sahilrajput03/context-maker-npm.git"
+	},
+	"keywords": ["react-context", "reactContext", "react-context-creator", "create-react-context", "react-create-context", "useContext", "createContext"],
+	"author": "Sahil Rajput",
+	"license": "ISC"
 }
