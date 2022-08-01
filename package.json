@@ -1,6 +1,6 @@
 {
 	"name": "context-maker",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
@@ -11,7 +11,15 @@
 		"type": "git",
 		"url": "https://github.com/sahilrajput03/context-maker-npm.git"
 	},
-	"keywords": ["react-context", "reactContext", "react-context-creator", "create-react-context", "react-create-context", "useContext", "createContext"],
+	"keywords": [
+		"react-context",
+		"reactContext",
+		"react-context-creator",
+		"create-react-context",
+		"react-create-context",
+		"useContext",
+		"createContext"
+	],
 	"author": "Sahil Rajput",
 	"license": "ISC"
 }
