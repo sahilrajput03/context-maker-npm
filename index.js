@@ -3,10 +3,10 @@ import {createContext, useContext, useState} from 'react'
 function contextMaker() {
 	let MyContextInstance
 
-	const useMyContext = (value) => {
-		const _value = useState(value)
+	const useMyContext = (initialValue) => {
+		const _value = useState(initialValue)
 
-		const isFirstCall = value !== undefined
+		const isFirstCall = initialValue !== undefined
 
 		// I create context only on first call of the hook
 		if (isFirstCall) {
