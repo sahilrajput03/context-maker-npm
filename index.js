@@ -1,26 +1,21 @@
-import { createContext, useContext, useState } from "react";
+import {createContext, useContext, useState} from 'react'
 
 function contextMaker() {
-  let MyContextInstance;
+	let MyContextInstance
 
-  const useMyContext = (value) => {
-    const _value = useState(value);
+	const useMyContext = (value) => {
+		const _value = useState(value)
 
-    const valueIsNotUndefined = value !== undefined;
+		const isFirstCall = value !== undefined
 
-    if (valueIsNotUndefined) {
-      MyContextInstance = createContext(_value);
-    }
+		if (isFirstCall) {
+			MyContextInstance = createContext(_value)
+		} else if (!MyContextInstance) throw Error('You must provide initial value to the `useYourContext()` hook')
 
-    if (!MyContextInstance)
-      throw Error(
-        "You must provide initial value to the `useYourContext()` hook"
-      );
+		return useContext(MyContextInstance)
+	}
 
-    return useContext(MyContextInstance);
-  };
-
-  return useMyContext;
+	return useMyContext
 }
 
-export default contextMaker;
+export default contextMaker
